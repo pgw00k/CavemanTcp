@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>f158f995-46ed-46b9-bc12-ca9b429b6064</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>CavemanTcp.Share</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)CavemanTcpClient.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CavemanTcpClientEvents.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CavemanTcpClientSettings.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CavemanTcpKeepaliveSettings.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CavemanTcpServer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CavemanTcpServerCallbacks.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CavemanTcpServerEvents.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CavemanTcpServerSettings.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CavemanTcpStatistics.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ClientConnectedEventArgs.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ClientDeclinedEventArgs.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ClientDisconnectedEventArgs.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ClientMetadata.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DisconnectReason.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ExceptionEventArgs.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ReadResult.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)WriteResult.cs" />
+  </ItemGroup>
+</Project>

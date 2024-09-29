@@ -19,7 +19,7 @@
 		<PackageLicenseFile>LICENSE.md</PackageLicenseFile>
 		<PackageIcon>icon.png</PackageIcon>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
-		<SignAssembly>True</SignAssembly>
+		<SignAssembly>False</SignAssembly>
 		<AssemblyOriginatorKeyFile>C:\Code\Misc\CavemanTcp-2.0\cavemantcp.snk</AssemblyOriginatorKeyFile>
 	</PropertyGroup>
 
@@ -85,5 +85,7 @@
 			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
 		</None>
 	</ItemGroup>
+
+	<Import Project="..\CavemanTcp.Share\CavemanTcp.Share.projitems" Label="Shared" />
 
 </Project>
